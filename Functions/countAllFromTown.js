@@ -1,15 +1,14 @@
-function countAllFromTown(regNumString,loc){
-    var regNumberArray = regNumString.split(',');
-    var townNumArr = [];
-      
-    for(var i = 0; i<regNumberArray.length; i++){  
-      //var regNum = regNumberArray[i].trim();
-     if(regNumberArray[i].trim().startsWith(loc)){
-       townNumArr.push(regNumberArray[i].trim());
-       }
-      
+function countAllFromTown(regNum,loc){
+  var countArr = regNum.split(',')
+  //console.log(countArr)
+  var countNumArr = [];
+    for(var i = 0; i<countArr.length;i++){
+    if(countArr[i].trim().startsWith(loc)){
+     countNumArr.push(countArr[i].trim());
+     
     }
-    return townNumArr;  
     }
+    return countNumArr.length;
+  }
     
     
